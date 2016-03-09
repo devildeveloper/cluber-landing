@@ -1,0 +1,262 @@
+body{
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    max-width:1400px;
+}
+.box{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    height:100%;
+    width:100%;
+    /*bg image*/
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.main{
+    background-image: url('../images/Capa-44.png');
+}
+#logo{
+    position: fixed;
+    top: 40px;
+    left: 45px;
+    z-index: 99;
+}
+.main .join{
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.main .join h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 0px;
+    line-height:1em;
+}
+.main .join p{
+    margin-top: 10px;
+}
+.main .join p span{
+    font-weight:bold;
+}
+.main .join button{
+    background-color :white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:20px;
+    background-color: #2BAA80;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.2em
+}
+.validate-code{
+    /*opacity:0;*/
+    text-transform: uppercase;
+    z-index: 2;
+    background-image: url('../images/fondo_1.png');
+    display: table;
+    top:-100%;
+    transition-property: top;
+    transition-duration: .6s;
+    transition-delay: 0s;
+}
+[data-activate]{
+    top:0 !important;
+}
+.validate-code form{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.validate-code form >* {
+    display: block;
+    margin:0 auto;
+}
+.validate-code form h1{
+    font-size: 1em;
+    color: #2BAA80;
+    font-weight: normal;
+    margin-bottom: 10px
+}
+.validate-code form input{
+    width: 230px;
+    padding: 5px;'
+}
+.welcome{
+    z-index:3;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-image:url("../images/fondo_2.png");
+    display: table;
+    top:-100%;
+    transition-property: top;
+    transition-duration: .6s;
+    transition-delay: 0s;
+}
+.welcome h1{
+    color:#2BAA80;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.welcome span{
+    color:#2BAA80;
+}
+.welcome p{
+    margin-top:20px;
+}
+.welcome button{
+    margin-top:20px;
+}
+.welcome .content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+[data-left]{
+    left:0 !important;
+}
+.user-form{
+    z-index:4;
+    background-color: white;
+    color: gray !important;
+    left:-100%;
+    transition-property: left;
+    transition-duration: .6s;
+    transition-delay: 0s;
+}
+.user-form > div{
+    position: absolute;
+    top:0;
+    width: 50%;
+    height:100%;
+}
+.user-form button.inverted{
+    color: #2BAA80 !important;
+    font-size: 1.1em !important;
+    display:block;
+    width: 100%;
+    max-width: 330px;
+}
+.user-form .main-left{
+    left:0;
+    background-image: url('../images/gay_boy.png');
+    background-position: right bottom;
+    background-repeat:no-repeat;
+}
+.user-form .main-right{
+    left:50%;
+    max-width:500px;
+    margin-top: 100px;
+}
+.user-form select{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.user-form .policy{
+    margin-top:10px;
+    font-size: .7em;
+}
+.user-form select[name='universidad'],.user-form select[name='carrera']{
+    width: 100%;
+    margin-left: 20px;
+}
+.user-form .content+.content{
+    margin-top: 50px;
+}
+.user-form .content .input{
+    border-top:1px solid gray;
+}
+.user-form .content .input:last-child{
+    border-bottom:1px solid gray;
+}
+.user-form .content >p{
+    font-size:1.2em;
+    color: #2BAA80;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.user-form .content .input div{
+    display: inline-block;
+    margin-right: -4px;
+    width:50%;
+    vertical-align: top;
+}
+.user-form input{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.user-form .content .input .left{
+    border-right:1px solid gray;
+}
+.user-form .radios{
+    float: right;
+}
+.user-form .content .input .radios .radio{
+    width :auto;
+}
+.user-form .content .input  span{
+    margin-left:20px;
+}
+.user-form .content .input  .right .radio{
+    display: inline-block;
+    width:auto;
+}
+.user-form .select{
+    float: right;
+}
+.user-form select[name="dia"],.user-form select[name="mes"],.user-form select[name="anio"]{
+    margin-left: 10px
+}
+.user-form select[name="anio"]{
+    margin-right: 10px;
+}
+.user-form .content button+p{
+    font-size:.7em;
+    color:gray;
+}
+/*helpers*/
+.center{
+    margin:0 auto;
+    text-align: center;
+}
+button{
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+button.inverted{
+    width: 80%;
+    max-width: 150px;
+    background-color: transparent;
+    color: white;
+    margin-top: 30px;
+    border: 1px solid #2BAA80;
+    padding: 10px;
+    font-size: .6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+input{
+    background-color: white;
+    outline:none;
+}
+select{
+    outline:none;
+    background-image: url('../images/arrow_green.png');
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+/**/

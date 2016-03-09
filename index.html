@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cluber</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="logo">
+            <img src="https://s3.amazonaws.com/cluber/logo-copia.png" alt="cluber logo">
+        </div>
+        <div class="box main">
+            <div class="join center">
+                <h1>¡Únete a cluber!</h1>
+                <p>El primer club de <span>beneficios exclusivos </span>para estudiantes</p>
+                <button type="button">únete</button>
+            </div>
+        </div>
+        <div class="box validate-code">
+            <form action="" class="center v-center">
+                <h1>ingresa tu código de invitación</h1>
+                <input type="text" name="code" required>
+                <button class="inverted">validar</button>
+            </form>
+        </div>
+        <div class="box welcome">
+            <div class="content">
+                <h1>¡bienvenido!</h1>
+                <p>Solo un grupo limitado de estudiantes puede pertenecer <br>
+                    a cluber, si haz llegado hasta este punto es por que eres <br>
+                    <span>candidato</span> a ser uno de ellos, pero ¡espera!.</p>
+                <p>no es tan fácil como piensas,<br>
+                    <span>primero</span> tenemos que conocerte.</p>
+                <p>si estás de acuerdo dale click a "siguiente"...</p>
+                <button class="inverted">siguiente</button>
+            </div>
+        </div>
+        <div class="box user-form">
+            <div class="main-left"></div>
+            <div class="main-right">
+                <div class="content">
+                    <p>Info Personal</p>
+                    <div class="input">
+                        <div class="left">
+                            <input type="text" placeholder="Nombres">
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="Apellidos">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="left">
+                            <input type="text" placeholder="DNI">
+                        </div>
+                        <div class="right" style="padding-top:10px ">
+                            <span>Sexo</span>
+                            <div class="radios" style="margin-right:30px;">
+                                <div class="radio">
+                                    <span>M</span>
+                                    <input type="radio" name="sexo" checked>
+                                </div>
+                                <div class="radio">
+                                    <span>F</span>
+                                    <input type="radio" name="sexo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                       <div class="left" style="border:0;padding-top:10px">
+                           <span>Fecha de Nacimiento</span>
+                       </div>
+                        <div class="right">
+                            <div class="radios" style="width:100%">
+                                <div class="radio select">
+                                    <select name="anio" id="">
+                                        <option value="0">Año</option>
+                                    </select>
+                                </div>
+                                <div class="radio select">
+                                    <select name="mes" id="">
+                                        <option value="0">Més</option>
+                                    </select>
+                                </div>
+                                <div class="radio select">
+                                    <select name="dia" id="">
+                                        <option value="0">Día</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Celular">
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Info Académica</p>
+                    <div class="input">
+                        <select name="universidad" id="">
+                            <option value="0">Universidad / Instituto</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <div class="left">
+                            <input type="text" placeholder="Sede" name="sede">
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="Código" name="codigo">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <select name="carrera" id="">
+                            <option value="0">Carrera</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="inverted">unirme</button>
+                    <p class="policy">Al hacer click en unirme estas aceptando los términos y políticas <br>
+                        de privacidad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
