@@ -24,3 +24,8 @@ document.querySelector('.close')
     .addEventListener('click',function(){
        this.parentNode.removeAttribute('data-activate-window');
     });
+document.querySelector('.user-form button')
+    .addEventListener('click',function(){
+        document.querySelector('.final')
+            .setAttribute('data-activate','');
+    })
